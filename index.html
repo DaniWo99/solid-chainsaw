@@ -1,6 +1,48 @@
-<div style="width: 100%; height: 100vh; overflow: hidden;">
-  <iframe src="https://script.google.com/macros/s/AKfycbwMiqN4P4RpH9Vq2dmER4sC3pAwZmgK8WTNsXquezxyZs2ARxYJzUIlv8NNyhDQbksF/exec" 
-          style="width: 100%; height: 100%; border: none;" 
-          allowfullscreen>
-  </iframe>
-</div>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <title>Solicitud de Crédito - FINANCIS</title>
+  <style>
+    /* Reset y ajuste de pantalla completa sin barras dobles de scroll */
+    html, body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      overflow-x: hidden;
+      background-color: #ffffff; /* O el color de fondo que prefieras */
+    }
+
+    /* Contenedor responsivo del iframe optimizado para móvil y escritorio */
+    .iframe-container {
+      position: relative;
+      width: 100%;
+      min-height: 100vh;
+      border: none;
+      overflow: hidden;
+    }
+
+    iframe {
+      width: 100%;
+      height: 100%;
+      min-height: 100vh;
+      border: none;
+      display: block;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="iframe-container">
+    <!-- Reemplaza 'PEGA_AQUÍ_LA_URL_DE_TU_WEB_APP' por la URL que te dio Google Apps Script al implementar -->
+    <iframe src="PEGA_AQUÍ_LA_URL_DE_TU_WEB_APP" 
+            title="Formulario Solicitud de Crédito FINANCIS"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen>
+    </iframe>
+  </div>
+
+</body>
+</html>
